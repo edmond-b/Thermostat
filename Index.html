@@ -1,37 +1,35 @@
 <!DOCTYPE html>
-
-<script src="src/thermostat.js"></script>
-<script src="JQuery.js"></script>
-
 <html>
-
   <head>
+    <script src="src/thermostat.js"></script>
+    <script src="JQuery.js"></script>
+    <script src="interface.js"></script> 
+
     <title> Thermostat </title>
-
     <h1> Thermostat' </h1>
-
   </head>
 
-    <body>
+  <body>
     <section>
-    <button id="powermode">Power Mode</button>
-    <button id="up">Up</button>
-    <button id="down">Down</button>
-    <button id="reset">Reset</button>
+      <button id="powermode">Power Mode</button>
+      <button id="up">Up</button>
+      <button id="down">Down</button>
+      <button id="reset">Reset</button>
 
-  <p>
-    <h2 id='Temperature'>Temperature</h2>
-    30`C
-  </p>
-  <p>
-    <h2 id='Energy Usage'>Energy Usage</h2>
-    High-Usage
-  </p>
-  <p>
-    <h2 id='Power Mode'>Power Mode</h2>
-    On
-  </p>
-  </section>
-
+      <p>
+        <h2>Temperature</h2>
+        <h3 id='Temperature'>Temperature</h3>
+      </p>
+      
+      <p>
+        <h2>Energy Usage</h2>
+        <h3 id='Energy Usage'> </h3>
+      </p>
+      
+      <p>
+        <h2 >Power Mode</h2>
+        <h3 id='Power_Mode'></h3>
+      </p>
+    </section>
   </body>
 </html>
