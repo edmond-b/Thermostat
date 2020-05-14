@@ -1,11 +1,14 @@
-'use strict'
+'use strict';
 
-describe('thermostat', function(){
+describe('Thermostat', function() {
 
-var temperature;
+  var thermostat;
 
-});
-
-  it("Defults to 20 C", function() {
-    expect(thermostat.temerature()).toBe(20);
+  beforeEach(function() {
+    thermostat = new Thermostat();
   });
+
+  it('starts at 20 degrees', function() {
+    expect(thermostat.getCurrentTemperature()).toEqual(20);
+  });
+});
