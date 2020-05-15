@@ -2,36 +2,40 @@
 
 <script src="src/thermostat.js"></script>
 <script src="JQuery.js"></script>
+<script src="src/interface.js"></script>
 
 <html>
-
   <head>
     <title> Thermostat </title>
-
-    <h1> Thermostat' </h1>
-
+    <h1> Thermostat </h1>
   </head>
+  <hr>
+  
+  <body>
+    <h2> Temperature: </h2>
+      <h4 id='temperature'>20</h4>
+      <button id="up">Up</button>
+      <button id="down">Down</button>
+      <button id="reset">Reset</button>
+    <hr>
 
-    <body>
+    <h2> Power Saving: </h2>
+      <h4 id='PowerMode'>On</h4>
+      <button id="powermodeoff">Power Mode Off</button>
+      <button id="powermodeon">Power Mode On</button>
+    <hr>
+
+    <h2> Energy Usage: </h2>
+      <h4 id='EnergyUsage'> Medium-Usage </h4>
+    <hr>
+
     <section>
-    <button id="powermode">Power Mode</button>
-    <button id="up">Up</button>
-    <button id="down">Down</button>
-    <button id="reset">Reset</button>
-
-  <p>
-    <h2 id='Temperature'>Temperature</h2>
-    30`C
-  </p>
-  <p>
-    <h2 id='Energy Usage'>Energy Usage</h2>
-    High-Usage
-  </p>
-  <p>
-    <h2 id='Power Mode'>Power Mode</h2>
-    On
-  </p>
-  </section>
-
+      <h2>Current temperature:</h2>
+      <h3><span id="current-temperature">?</span></h3>
+      <form id="select-city">
+        <input id="current-city" type="text" placeholder="Enter a city"></input>
+        <input type="submit"></input>
+      </form>
+    </section>
   </body>
 </html>
